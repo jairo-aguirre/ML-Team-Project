@@ -4,7 +4,7 @@
 
 #
 <h1 align="center">
-  Yi-Kai's AI/ML Play Zone 🛝 <br>
+  Yi-Kai's AI/ML New York Stock Exchange Play Zone 🛝 <br>
   </h1>
 
 <!-- <p align="center">
@@ -18,7 +18,7 @@
 
 ### 🧠 Rationale: 
 
-- "Most of the business problems are not ML problem, and most of the ML problems are not business problems" from Production Day 1: 36:58.
+- "Most of the business problems are not ML problems, and most of the ML problems are not business problems" from Production Lecture Day 1 : 36:58.
   - Optimizing an ML model is not the same thing as optimizing a business problem. 
 
 - ML system: Learn automatically and gain from the experience (*the experience: in plain English, more data, more observation*); however, more data or experience does not necessarily guarantee better performance.
@@ -29,23 +29,21 @@
 
 ### 🧭 🗺️ Current Roadmap:
 
-The goal is to capture only the most meaningful patterns—roughly the top 20% of information that drives 80% of the variability in the data. This approach below focuses on extracting essential signals rather than exhaustively representing every detail, ensuring the model remains interpretable and efficient.”
+This idea here is focuses on isolating core predictive patterns rather than modeling every variable. The goal is to extract essential signals using available and ready to use algorithms by adopting the 80/20 rules — to keep the model both interpretable and computationally efficient.
 
-  1. Quick test on the current available common stock prediction models with representive stocks (AAPL, INTC, MSFT) ✅  
+  1. Quick test of avialable common stock models (ARIMA, LSTRM, etc) with representive stocks (AAPL, INTC, MSFT) ✅  
 
-  2. Assess initial model (baseline) performance using randomness robustness (Test 1 to Test 6)✅  
+  2. Assess the baseline performance using randomness robustness, regression, residual analysis (Test 1 to Test 6)✅  
   
-  3. Tune/featuring engineering (Test 7, 8, 9)✅  
+  3. Tuning by featuring engineering and re-assess the tuned model (Test 7, 8, 9)✅  
   
-  4. Re-Assessment the tuned models (Test 7, 8, 9) ✅  
+  4. Applying the same approach to the same sectors"TBD/exploratory?(TBD)”
   
-  5. Applying the same approach to the same sectors"TBD/exploratory”
-  
-      - Selecting indicator stocks?(TBD)    
-      
-      - AutoML for automation?(TBD)   
+      - Selecting indicator stocks (TBD)  
 
-  6. UMAP for poor performer analysis (TBD)  
+      - Exploring AutoML for automation for tuning on hyperparameters (TBD)
+
+  5. UMAP-based analysis for poor performers (TBD) 
    .....  
    .....  
   X. Scale-up to other sectors?(TBD)    
