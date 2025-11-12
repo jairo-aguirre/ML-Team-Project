@@ -7,3 +7,4 @@ tqdm
 statsmodels
 tensorflow
 xgboost
+python-dotenv

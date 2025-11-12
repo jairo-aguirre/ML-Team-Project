@@ -1,0 +1,63 @@
+services:
+  # PostgreSQL database
+  postgres:
+    image: postgres:latest
+    container_name: nsye_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file: ./.env
+    volumes:
+      - ./postgres_data:/var/lib/postgresql
+
+
+  # pgAdmin
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: nsye_pgadmin
+    restart: always
+    ports:
+      - "5051:80"
+    env_file: ./.env
+
+  # MinIO object storage
+  minio:
+    image: minio/minio:latest
+    container_name: nsye_minio
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    env_file: ./.env
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./minio_data:/data
+
+  # MLFlow server
+  mlflow:
+    build: ./mlflow
+    container_name: nsye_mlflow
+    restart: always
+    ports:
+      - "5001:5000"
+    env_file: ./.env
+    environment:
+      - AWS_ACCESS_KEY_ID=${MINIO_ROOT_USER}
+      - AWS_SECRET_ACCESS_KEY=${MINIO_ROOT_PASSWORD}
+      - MLFLOW_S3_ENDPOINT_URL=http://minio:9000
+      - MLFLOW_S3_IGNORE_TLS=true
+    command: >
+      mlflow server
+      --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB}
+      --host 0.0.0.0
+      --serve-artifacts
+      --artifacts-destination s3://mlflow
+    depends_on:
+      - postgres
+      - minio
+
+
+
+
+
+  
