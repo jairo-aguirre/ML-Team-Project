@@ -58,14 +58,8 @@ cd src/experiment_tracking
 
 2. Ensure Docker is running locally.  
 
-3. Update `.env` with your credentials (example):
+3. Update `.env` with your credentials:
 
-```text
-MINIO_ROOT_USER=minio
-MINIO_ROOT_PASSWORD=minio123
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres123
-```
 
 4. Build Docker containers:
 
