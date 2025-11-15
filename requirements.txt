@@ -9,4 +9,3 @@ tensorflow
 xgboost
 python-dotenv
 pyarrow
-hdbscan; platform_system != "Windows"
