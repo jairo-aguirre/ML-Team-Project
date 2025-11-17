@@ -194,3 +194,10 @@ Building on the current baselines, future work will focus on exploring advanced 
 - **Cluster-specific exploration:** While the current work focused on large tech stocks that performed well post-financial crisis, future work will explore additional clusters representing mid-cap, small-cap, or high-volatility stocks to evaluate model robustness across different investment strategies.  
 
 These approaches aim to complement the existing baselines, providing more precise, cluster-aware predictions for day traders while balancing risk and return.
+
+---
+
+## Members
+- [Grace Gosselin]()
+- [Jairo Aguirre](https://drive.google.com/drive/folders/1gbxQMRF3WU2SmQEaFucQIlizFyP4U5R9?usp=drive_link)
+- [Sumit Giri]()
