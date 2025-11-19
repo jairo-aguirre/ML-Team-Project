@@ -200,4 +200,4 @@ These approaches aim to complement the existing baselines, providing more precis
 ## Members
 - [Grace Gosselin]()
 - [Jairo Aguirre](https://drive.google.com/drive/folders/1gbxQMRF3WU2SmQEaFucQIlizFyP4U5R9?usp=drive_link)
-- [Sumit Giri]()
+- [Sumit Giri](https://drive.google.com/file/d/1er_iu5fkasrlfCtLBqTlp9KgiBo6DgeA/view?usp=sharing)
